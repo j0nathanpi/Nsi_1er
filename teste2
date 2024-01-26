@@ -1,0 +1,36 @@
+
+
+// This code was recorded by TestComplete:
+ 
+
+function Test()
+{
+  var p, w;
+  p = Sys["Process"]("notepad");
+  w = p["Window"]("Notepad", "*");
+  w["Activate"]();
+  w["Window"]("Edit")["VScroll"]["Pos"] = 0;
+  w["Window"]("Edit")["Click"](9, 9);
+  Sys["Keys"]("Test");
+  w["MainMenu"]["Click"]("File|Exit");
+}
+	
+
+// This code was imported to a C++ Connected Application:
+ 
+
+#include "c:\TestComplete\Connected Apps\C++\script.h"
+using namespace TestComplete;
+IMPLEMENT_TESTCOMPLETE_GLOBAL_OBJECTS
+ 
+function Test()
+{
+  var p, w;
+  p = Sys["Process"]("notepad");
+  w = p["Window"]("Notepad", "*");
+  w["Activate"]();
+  w["Window"]("Edit")["VScroll"]["Pos"] = 0;
+  w["Window"]("Edit")["Click"](9, 9);
+  Sys["Keys"]("Test");
+  w["MainMenu"]["Click"]("File|Exit");
+}
