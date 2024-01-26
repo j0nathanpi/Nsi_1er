@@ -22,3 +22,4 @@ void Test()
   wrd["Documents"]["Add"]();
   wrd["Selection"]["InsertAfter"]("Hello, world!");
 }
+je change un peu pour voir
